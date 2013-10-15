@@ -1,0 +1,11 @@
+$('#menu-main-menu > li > a').on('touchstart', onTapHandler);
+function onTapHandler(event) {
+    if($(this).parent().find(".sub-menu").length>0){
+        if($(this).hasClass('hovered')){
+        }
+          else{
+            $(this).addClass("hovered");
+            event.preventDefault();
+        }
+    }
+}
